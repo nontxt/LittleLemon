@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'restaurant',
     # 3-thd party apps
     'rest_framework',
+    'rest_framework.authtoken',
     'djoser',
 ]
 
