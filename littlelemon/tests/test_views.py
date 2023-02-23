@@ -11,7 +11,7 @@ class MenuViewTest(APITestCase):
         self.item1 = Menu.objects.create(title="IceCream", price=80, inventory=100)
         self.item2 = Menu.objects.create(title="Pasta", price=90, inventory=50)
 
-    def test_getall(self):
+    def test_get_all(self):
         response = self.client.get(reverse('menu'), format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
