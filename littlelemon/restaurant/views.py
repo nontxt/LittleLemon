@@ -6,6 +6,10 @@ from .models import Menu, Booking
 from .serializers import MenuSerializer, BookingSerializer
 
 
+def index(request):
+    return render(request, 'index.html', {})
+
+
 class MenuItemView(ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
